@@ -1,0 +1,7 @@
+package com.example.satana.vars;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("PRIVET MEDVED");
+    }
+}
