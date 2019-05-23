@@ -11,8 +11,7 @@ public class Ex2 {
         int numb2;
         System.out.print("Press number 2 : ");
         numb2 = scan.nextInt();
-        {
+        int Result=numb1+numb2;
             System.out.println(numb1 + numb2);
-        }
     }
 }

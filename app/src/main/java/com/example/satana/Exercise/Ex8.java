@@ -3,7 +3,7 @@ package com.example.satana.Exercise;
 import java.util.Scanner;
 
 public class Ex8 {
-    public static void m4ain(String[] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         double numb1;
