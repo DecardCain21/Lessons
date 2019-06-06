@@ -6,6 +6,8 @@ public class Ex8 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        //тот же комент как и к заданию 8
+
         double numb1;
         System.out.print("Press number 1 : ");
         numb1 = scan.nextDouble();
