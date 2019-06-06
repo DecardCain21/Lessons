@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ex7 {
     public static void main(String[] args) {
+
+        //todo Марат не обязательно надо было так делать, тут было задание просто выразить это мат выражение в программном коде
+        // но так тоже норм
+        //доп задание к этому коду, почитать try catch и добавить сюда проверку валидности ввода цифр, если чтоб не падал если ввел букву
         Scanner scan = new Scanner(System.in);
         double numb1;
 
