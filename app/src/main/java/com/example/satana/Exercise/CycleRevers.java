@@ -8,6 +8,8 @@ public class CycleRevers {
         int x;
         int reverse;
         int z;
+        int reverse2;
+        int f=1;
         System.out.println("Press ur number");
         x = scan.nextInt();
         do {
@@ -15,6 +17,9 @@ public class CycleRevers {
             reverse = x % z;
             System.out.println("Revers:"+reverse);
             x = x / 10;
+            f=f*10;
+            reverse2=reverse*f;
+            System.out.println("Это чё:"+reverse2);
         }
         while (x > 0);
     }
