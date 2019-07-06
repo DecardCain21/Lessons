@@ -6,23 +6,26 @@ public class CycleRevers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int x;
-        int reverse;
+        int reverse=0;
+        int y=0;
         int z;
-        int reverse2;
-        int f=1;
         System.out.println("Press ur number");
         x = scan.nextInt();
-        do {
-            z = +10;
-            reverse = x % z;
-            System.out.println("Revers:"+reverse);
+        while (x > 0)
+        {
+            y=(y+reverse)*10;
+            //System.out.println("Это чё:"+y);
+            reverse= x % 10;
             x = x / 10;
-            f=f*10;
-            reverse2=reverse*f;
-            System.out.println("Это чё:"+reverse2);
+            if(x<10){
+                z=(y+reverse);
+                System.out.println("Reverse is:"+z);
+            }
         }
-        while (x > 0);
+        scan.close();
     }
-
+    //не забывай закрывать сканер иначе это утечка данных
+    //привыкай с молоду как говориться
 }
+
 
