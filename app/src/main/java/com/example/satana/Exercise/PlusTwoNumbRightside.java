@@ -7,21 +7,16 @@ public class PlusTwoNumbRightside {
         Scanner scan = new Scanner(System.in);
         int Chislo;
         int Ostatok = 0;
-        int PredChislo = 0;
         int i = 0;
         System.out.println("Press ur number");
         Chislo = scan.nextInt();
-        while (Chislo > 0) {
-            PredChislo = (PredChislo + Ostatok) * 10;
+        while (i < 2) {
             Ostatok = Chislo % 10;
             Chislo = Chislo / 10;
             i++;
-            if (i >= 2) {//Заменить 2 на 1 если нужна лишь первая цифра справа
-                System.out.println("Two numb on the right side:" + Ostatok );
-                break;
-            }
             scan.close();
         }
+        System.out.println("Two numb on the right side:" + Ostatok );
     }
 }
 //System.out.print(Reverse)
