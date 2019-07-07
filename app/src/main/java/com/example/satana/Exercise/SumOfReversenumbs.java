@@ -2,7 +2,7 @@ package com.example.satana.Exercise;
 
 import java.util.Scanner;
 
-public class CycleRevers {
+public class SumOfReversenumbs {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int Chislo;
@@ -12,17 +12,14 @@ public class CycleRevers {
         System.out.println("Press ur number");
         Chislo = scan.nextInt();
         while (Chislo>0) {
-            PredChislo = (PredChislo + Ostatok) * 10;
+            PredChislo = (PredChislo + Ostatok);
             Ostatok = Chislo % 10;
             Chislo = Chislo / 10;
         }
-            if(Chislo<10){
-                Reverse=(PredChislo+Ostatok);
-                System.out.println("ReversE is:"+Reverse);
-            }
-            scan.close();
+        if(Chislo<10){
+            Reverse=(PredChislo+Ostatok);
+            System.out.println("ReversE is:"+Reverse);
         }
+        scan.close();
     }
-//+
-
-
+}

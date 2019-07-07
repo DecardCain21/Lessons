@@ -3,20 +3,17 @@ package com.example.satana.Exercise;
 public class Ex10 {
     public static void main(String[] args) {
         //давай добавим сканер чтоб на бегу тестить разные результаты
-        int x = 42357;
-        int reverse;
-        int z;
+        int Chislo = 42357;
+        int Ostatok;
         do {
-            z = +10;
-            reverse = x % z;
-            System.out.println(reverse);
-            x = x / 10;
+            Ostatok = Chislo % 10;
+            System.out.print(Ostatok);
+            Chislo = Chislo / 10;
         }
-        while (x > 0);
+        while (Chislo > 0);
     }
-
 }
-
+//+
 
 
 
