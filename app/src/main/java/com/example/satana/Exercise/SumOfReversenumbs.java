@@ -6,20 +6,18 @@ public class SumOfReversenumbs {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int Chislo;
-        int Ostatok=0;
-        int PredChislo=0;
+        int Ostatok;
+        int PredChislo = 0;
         int Reverse;
         System.out.println("Press ur number");
         Chislo = scan.nextInt();
-        while (Chislo>0) {
-            PredChislo = (PredChislo + Ostatok);
+        while (Chislo > 9) {
             Ostatok = Chislo % 10;
             Chislo = Chislo / 10;
+            PredChislo = (PredChislo + Ostatok);
         }
-        if(Chislo<10){
-            Reverse=(PredChislo+Ostatok);
-            System.out.println("ReversE is:"+Reverse);
-        }
+        Reverse = (PredChislo + Chislo);
+        System.out.println("ReversE is:" + Reverse);
         scan.close();
     }
 }

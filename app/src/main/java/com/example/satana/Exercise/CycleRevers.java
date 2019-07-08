@@ -6,23 +6,20 @@ public class CycleRevers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int Chislo;
-        int Ostatok=0;
-        int PredChislo=0;
-        int Reverse;
+        int Ostatok = 0;
+        int PredChislo = 0;
         System.out.println("Press ur number");
         Chislo = scan.nextInt();
-        while (Chislo>0) {
-            PredChislo = (PredChislo + Ostatok) * 10;
+        while (Chislo > 9) {
             Ostatok = Chislo % 10;
             Chislo = Chislo / 10;
+            PredChislo = (PredChislo + Ostatok) * 10;
         }
-            if(Chislo<10){
-                Reverse=(PredChislo+Ostatok);
-                System.out.println("ReversE is:"+Reverse);
-            }
-            scan.close();
-        }
+        PredChislo = (PredChislo + Chislo);
+        System.out.println("ReversE is:" + PredChislo);
+        scan.close();
     }
+}
 //+
 
 
