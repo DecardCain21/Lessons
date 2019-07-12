@@ -1,17 +1,17 @@
 package com.example.satana.Exercise;
 
+import java.util.List;
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class TenNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
-        int two = 0;
-        int three = 0;
-        int five = 0;
-        int seven = 0;
-        int eleven = 0;
+        List<Integer> masseleven = new ArrayList<Integer>();
+        List<Integer> massseven = new ArrayList<Integer>();
+        List<Integer> massfive = new ArrayList<Integer>();
+        List<Integer> massthree = new ArrayList<Integer>();
+        List<Integer> masstwo = new ArrayList<Integer>();
         int chislo;
         int i = 0;
         do {
@@ -21,37 +21,42 @@ public class TenNumbers {
             if (chislo < 10) {
                 System.out.println("Введите число chislo>=10");
             }
-            if ((chislo % 2) == 0) {
-                chislo = two;
+            if ((chislo % 2)==0) {
+                int two=chislo;
                 System.out.println("This numb multiple of two");
-                numbers.add(0);
+                masstwo.add(chislo);
+                System.out.println (masstwo);
             }
             if ((chislo % 3) == 0) {
-                chislo = three;
+                int three= chislo;
                 System.out.println("This numb multiple of three");
-                numbers.add(1);
+                massthree.add(chislo);
+                System.out.println (massthree);
             }
             if ((chislo % 5) == 0) {
-                chislo = five;
+                int five=chislo;
                 System.out.println("This numb multiple of five");
-                numbers.add(2);
+                massfive.add(chislo);
+                System.out.println (massfive);
             }
             if ((chislo % 7) == 0) {
-                chislo = seven;
+                int seven=chislo;
                 System.out.println("This numb multiple of seven");
-                numbers.add(3);
+                massseven.add(chislo);
+                System.out.println (massseven);
             }
             if ((chislo % 11) == 0) {
-                chislo = eleven;
+                int eleven=chislo;
                 System.out.println("This numb multiple of eleven");
-                numbers.add(4);
+                masseleven.add(chislo);
+                System.out.println (masseleven);
             }
             }
         while (i < 10) ;
         scan.close();
         }
     }
-//        int [] arr={two,three,five,seven,eleven};
+//        List<Integer> list = new ArrayList<Integer>();
 //       System.out.println(Arrays.toString(arr));
 //    System.out.println(list.get(0));
 
