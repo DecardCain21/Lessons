@@ -21,41 +21,45 @@ public class TenNumbers {
             if (chislo < 10) {
                 System.out.println("Введите число chislo>=10");
             }
-            if ((chislo % 2)==0) {
-                int two=chislo;
-                System.out.println("This numb multiple of two");
+            if ((chislo % 2) == 0) {
+                int two = chislo;
+                //System.out.println("This numb multiple of two");
                 masstwo.add(chislo);
-                System.out.println (masstwo);
+                //System.out.println(masstwo);
             }
             if ((chislo % 3) == 0) {
-                int three= chislo;
-                System.out.println("This numb multiple of three");
+                int three = chislo;
+                //System.out.println("This numb multiple of three");
                 massthree.add(chislo);
-                System.out.println (massthree);
+                //System.out.println(massthree);
             }
             if ((chislo % 5) == 0) {
-                int five=chislo;
-                System.out.println("This numb multiple of five");
+                int five = chislo;
+                //System.out.println("This numb multiple of five");
                 massfive.add(chislo);
-                System.out.println (massfive);
+                //System.out.println(massfive);
             }
             if ((chislo % 7) == 0) {
-                int seven=chislo;
-                System.out.println("This numb multiple of seven");
+                int seven = chislo;
+                //System.out.println("This numb multiple of seven");
                 massseven.add(chislo);
-                System.out.println (massseven);
+                //System.out.println(massseven);
             }
             if ((chislo % 11) == 0) {
-                int eleven=chislo;
-                System.out.println("This numb multiple of eleven");
+                int eleven = chislo;
+                //System.out.println("This numb multiple of eleven");
                 masseleven.add(chislo);
-                System.out.println (masseleven);
+                //System.out.println(masseleven);
             }
-            }
-        while (i < 10) ;
-        scan.close();
         }
+        while (i < 10);
+        System.out.println("Числа делённые на 2:"+masstwo+"\nЧисла делённые на 3:"+massthree+"\nЧисла делённые на 5:"+massfive+"\nЧисла делённые на 7:"+massseven+"\nЧисла делённые на 11:"+masseleven);
+        scan.close();
     }
+}
+
+
+
 //        List<Integer> list = new ArrayList<Integer>();
 //       System.out.println(Arrays.toString(arr));
 //    System.out.println(list.get(0));
