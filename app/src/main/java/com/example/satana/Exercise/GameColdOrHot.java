@@ -18,11 +18,8 @@ public class GameColdOrHot {
             if (numb == gamenumber) {
                 System.out.println("Вы угадали загадонное число");
             }
-            else if (gamenumber < numb - 7) {
+            else if (numb+7< gamenumber|| gamenumber < numb - 7) {
                 System.out.println("Холодно1");
-            }
-            else if (gamenumber > numb + 7) {
-                System.out.println("Холодно");
             }
             else if(gamenumber-numb<Math.abs(7)){
                 System.out.println("Горячо");
