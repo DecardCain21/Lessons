@@ -19,6 +19,7 @@ public class MaxMultipleOfNumb {
             }
         }
         System.out.println(Collections.min(massnumb));
+        scan.close();
     }
 }
 //33:2:3:4:5...
