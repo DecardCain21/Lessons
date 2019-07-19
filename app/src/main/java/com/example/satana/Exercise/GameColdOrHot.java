@@ -6,22 +6,19 @@ import java.util.Scanner;
 public class GameColdOrHot {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int min = 0;
         int max = 200;
         Random rnd = new Random();
         int gamenumber = rnd.nextInt(max);
         System.out.println(gamenumber);
-        int numb=0;
-        do {
+        int numb = scan.nextInt();
+        while(gamenumber!=numb){
             System.out.println("Введите число");
-            numb = scan.nextInt();
             if (Math.abs(gamenumber - numb) > Math.abs(7)) {
                 System.out.println("Холодно");
             } else
                 System.out.println("Горячо");
-
+            numb = scan.nextInt();
         }
-        while(gamenumber!=numb);
         scan.close();
     }
 }

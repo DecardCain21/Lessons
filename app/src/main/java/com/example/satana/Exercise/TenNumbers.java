@@ -23,33 +23,23 @@ public class TenNumbers {
             }
             if ((chislo % 2) == 0) {
                 int two = chislo;
-                //System.out.println("This numb multiple of two");
                 masstwo.add(chislo);
-                //System.out.println(masstwo);
             }
             if ((chislo % 3) == 0) {
                 int three = chislo;
-                //System.out.println("This numb multiple of three");
                 massthree.add(chislo);
-                //System.out.println(massthree);
             }
             if ((chislo % 5) == 0) {
                 int five = chislo;
-                //System.out.println("This numb multiple of five");
                 massfive.add(chislo);
-                //System.out.println(massfive);
             }
             if ((chislo % 7) == 0) {
                 int seven = chislo;
-                //System.out.println("This numb multiple of seven");
                 massseven.add(chislo);
-                //System.out.println(massseven);
             }
             if ((chislo % 11) == 0) {
                 int eleven = chislo;
-                //System.out.println("This numb multiple of eleven");
                 masseleven.add(chislo);
-                //System.out.println(masseleven);
             }
         }
         while (i < 10);
@@ -64,6 +54,8 @@ public class TenNumbers {
 //       System.out.println(Arrays.toString(arr));
 //    System.out.println(list.get(0));
 
+
+//С оператором switch...
 
 
 
