@@ -36,6 +36,9 @@ public class Test {
     }
 }
 
+//switch case
+//операторы вытащи в константы
+
 //        else if (gamenumber < numb - 7) {
 //        System.out.println("Холодно1");
 //        }
