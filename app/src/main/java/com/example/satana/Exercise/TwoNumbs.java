@@ -12,6 +12,7 @@ public class TwoNumbs {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите 1-ое число:");
         int numb1 = scan.nextInt();
+
         System.out.println("Введите 2-ое число:");
         int numb2 = scan.nextInt();
         int Ostatok ;
@@ -32,9 +33,9 @@ public class TwoNumbs {
         Collections.sort(numbList2);
         for (int i = 0; i < numbList1.size(); i++) {
             for (int j = 0; j < numbList1.size(); j++) {
-                if (numbList1.get(i).equals(numbList2.get(j)) == true) {
+                if (numbList1.get(i).equals(numbList2.get(j))) {
                     System.out.println(numbList1.get(i) == (numbList2.get(j)) == true);
-                    break;
+                    return;
                 }
             }
         }

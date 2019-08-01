@@ -1,8 +1,5 @@
 package com.example.satana.Exercise;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class DaysOfWeek {
@@ -14,29 +11,28 @@ public class DaysOfWeek {
             switch (Number) {
                 case 1:
                     System.out.println("Понедельник");
-                    break;
+                    return;
                 case 2:
                     System.out.println("Вторник");
-                    break;
+                    return;
                 case 3:
                     System.out.println("Среда");
-                    break;
+                    return;
                 case 4:
                     System.out.println("Четверг");
-                    break;
+                    return;
                 case 5:
                     System.out.println("Пятница");
-                    break;
+                    return;
                 case 6:
                     System.out.println("Суббота");
-                    break;
+                    return;
                 case 7:
                     System.out.println("Воскресенье");
-                    break;
-                    default:
-                        System.out.println("Ещё по одной?");
+                    return;
+                default:
+                    System.out.println("Ещё по одной?");
             }
-
         }
     }
 }

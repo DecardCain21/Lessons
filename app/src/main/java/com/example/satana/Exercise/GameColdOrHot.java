@@ -12,11 +12,11 @@ public class GameColdOrHot {
         System.out.println(gamenumber);
         int numb = scan.nextInt();
         while(gamenumber!=numb){
-            System.out.println("Введите число");
-            if (Math.abs(gamenumber - numb) > Math.abs(7)) {
+            if (Math.abs(gamenumber - numb) > 7) {
                 System.out.println("Холодно");
             } else
                 System.out.println("Горячо");
+
             numb = scan.nextInt();
         }
         scan.close();

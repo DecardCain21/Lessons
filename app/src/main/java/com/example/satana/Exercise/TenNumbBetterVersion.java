@@ -10,6 +10,7 @@ public class TenNumbBetterVersion {
         int[] deliteli = {2, 3, 5, 7, 11};
         Scanner scan = new Scanner(System.in);
         HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
+
         for (int i = 0; i < 10; i++) {
             System.out.println("введите число больше 10: ");
             num = scan.nextInt();

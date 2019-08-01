@@ -10,10 +10,12 @@ public class Stepen {
         int numb=scan.nextInt();
         System.out.println("Введите степень");
         int stepen=scan.nextInt();
+
         for(int i=0;i<stepen;i++){
             result=result*numb;
-            System.out.println(result);
+
         }
+        System.out.println(result);
 
     }
 }
