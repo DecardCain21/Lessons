@@ -1,7 +1,6 @@
 package com.example.satana.review1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -12,9 +11,8 @@ public class FizzBuzzEx3 {
         Scanner scan = new Scanner(in);
         int numbmin = enterNum(scan);
         int numbmax = enterNum2(scan);
-        List<String> result = Line(scan, numbmin, numbmax);
+        List<String> result = line(numbmin, numbmax);
         System.out.println(result);
-        int i = 0;
     }
 
     private static int enterNum(Scanner scan) {
@@ -27,24 +25,21 @@ public class FizzBuzzEx3 {
         return scan.nextInt();
     }
 
-    private static List<String> Line(Scanner scan, int min, int max) {
-        List<String> FizzBuzz = new ArrayList<>();
+    private static List<String> line(int min, int max) {
+        List<String> fizzBuzz = new ArrayList<>();
         for (int i = min; i <= max; i++) {
-            String z = String.valueOf(i);
-            if (i % 3 == 0 && i % 5 == 0) {
-                FizzBuzz.add("FizzBuzz");
-                continue;
-            }
+            String num = "";
             if (i % 3 == 0) {
-                FizzBuzz.add("Fizz");
-                continue;
+                num += "Fizz";
             }
             if (i % 5 == 0) {
-                FizzBuzz.add("Buzz");
-                continue;
+                num += "Buzz";
             }
-            FizzBuzz.add(z);
+            String result = num.length() > 0 ? num : String.valueOf(i); //условие ?(если тру) то что нужно вернуть :(если фолс) вернуть этот ответ
+            fizzBuzz.add(result);
         }
-        return FizzBuzz;
+        return fizzBuzz;
     }
 }
+
+//позаботиться о том чтоб возможность ввода разных чисел не мешало созданию диапозона
