@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class MethodFunctions {
+public class MethodFunctionsA {
     public static void main(String[] args) {
         int n=0;
         Scanner scan = new Scanner(System.in);
