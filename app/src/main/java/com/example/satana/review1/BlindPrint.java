@@ -29,10 +29,14 @@ public class BlindPrint {
                 rndS += two;
             }
         }
-        System.out.println(rndS);
-        System.out.println("Введите последовательность:");
-        String uprint=scan.nextLine();
-        System.out.println(rndS.equals(uprint));
+        while(true) {
+            System.out.println(rndS);
+            System.out.println("Введите последовательность:");
+            String uprint = scan.nextLine();
+            if(rndS.equals(uprint)) {
+                break;
+            }
+        }
     }
     private static String info(){
         String info="«Поставьте мизинец левой руки на букву Ф, безымянный палец — на Ы, средний — на В, указательный — на А. Мизинец правой руки на букву Ж,\nбезымянный палец — на Д, средний — на Л, указательный — на О. Запомните расположение пальцев. Повторяйте за мной:».";
