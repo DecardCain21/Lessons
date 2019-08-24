@@ -9,12 +9,11 @@ public class RasminkaEx5 {
         ArrayList<Integer> massivTwo = new ArrayList();
         System.out.println("Введите число");
         int chislo = scan.nextInt();
-        System.out.println("Введите разность");
-        int difference = scan.nextInt();
         massivTwo.add(chislo);
+        chislo=chislo-chislo%3;
         for (int i = chislo; i>=1; i--) {
             i=chislo;
-            chislo = chislo/ difference;
+            chislo = chislo-3;
             massivTwo.add(chislo);
             System.out.println(i);
         }
