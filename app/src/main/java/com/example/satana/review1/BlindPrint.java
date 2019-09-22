@@ -21,6 +21,7 @@ public class BlindPrint {
         Random random = new Random();
         for (int z = 0; z <= 10; z++) {
             int i = random.nextInt(diff + 1);
+            System.out.println(i);
             i += min;
             if (i == 2) {
                 rndS += one;

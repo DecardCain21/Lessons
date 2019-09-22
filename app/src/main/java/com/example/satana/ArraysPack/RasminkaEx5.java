@@ -9,10 +9,9 @@ public class RasminkaEx5 {
         ArrayList<Integer> massivTwo = new ArrayList();
         System.out.println("Введите число");
         int chislo = scan.nextInt();
-        massivTwo.add(chislo);
         chislo=chislo-chislo%3;
-        for (int i = chislo; i>=1; i--) {
-            i=chislo;
+        massivTwo.add(chislo);
+        for (int i =0;i<10; i++) {
             chislo = chislo-3;
             massivTwo.add(chislo);
             System.out.println(i);
@@ -21,3 +20,4 @@ public class RasminkaEx5 {
         System.out.println(massivTwo);
     }
 }
+//Перелелать,включая отрицательные

@@ -1,49 +1,47 @@
 package com.example.satana.Exercise;
 
+import com.example.satana.review1.FizzBuzzEx3;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
+import static java.lang.System.in;
 
 public class Test {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        char[] array = new char[5];
-        array[0]='%';
-        array[1]='/';
-        array[2]='*';
-        array[3]='+';
-        array[4]='-';
-        System.out.println("Введите 1-ое число:");
-        int numb1 = scan.nextInt();
-        System.out.println("Введите оператора:");
-        char operator = scan.next().charAt(0);
-        System.out.println("Введите 2-ое число:");
-        int numb2 = scan.nextInt();
-        if (array[0]== operator)
-            System.out.println("Итого:"+(numb1%numb2));
+    public static void main(String args[]) {
+        String[] slovo = {"Clockwork"};
+        char[] simvol1;
+        char[] simvol2;
+        simvol1 = new char[slovo[0].length()];
+        simvol2 = new char[slovo[0].length()];
+        HashMap<String, String> store = new HashMap<>();
+        for (int i = 0; i <= slovo[0].length(); i++) {
+            simvol1[0] = slovo[0].charAt(i);
+            System.out.println(i);
+            break;
+        }
+        for (int z = 0; z < slovo[0].length(); z++) {
+            if(simvol2[z]<slovo[0].charAt(z)) {
+                simvol2[z] = slovo[0].charAt(z);
+                System.out.println(z);
+            }
 
-        if(array[1]==operator)
-            System.out.println("Итого:"+(numb1/numb2));
+            char[] result = slovo[0].toCharArray();
+            String key = String.valueOf(simvol1[0]);
+            String counter = String.valueOf(simvol2[z]);
+            store.put(key, counter);
 
-        if(array[2]==operator)
-            System.out.println("Итого:"+(numb1*numb2));
-
-        if(array[3]==operator)
-            System.out.println("Итого:"+(numb1+numb2));
-        if(array[4]==operator)
-            System.out.println("Итого:"+(numb1-numb2));
+        }
+        for (String i : store.keySet()) {
+            System.out.println("Ключ: " + i + " Значение " + store.get(i));
+        }
     }
 }
 
-//        else if (gamenumber < numb - 7) {
-//        System.out.println("Холодно1");
-//        }
-//        else if (gamenumber > numb + 7) {
-//        System.out.println("Холодно");
-//Math.floor Math.ceil
-//Math.ceil(multiple = numb / i);
-//            if (chislo < 10) {
-//                System.out.println("Введите число chislo>=10");
-//            }
-//ОР System.out.println("Итого:"+numb1+numb2);
+
+

@@ -22,3 +22,4 @@ public class RasminkaEx6FiboIndex {
         System.out.println(massiv);
     }
 }
+//for шаг

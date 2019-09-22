@@ -7,7 +7,7 @@ fun main() {
     var number: Int
     var reversedNumber = 0
 
-    print("Enter number: ")
+    System.out.print("Enter number: ")
     number = scanner.nextInt()
     while (number > 9) {
         reversedNumber += number % 10
@@ -15,5 +15,5 @@ fun main() {
         reversedNumber *= 10
     }
     reversedNumber += number
-    print("reversed number is  $reversedNumber")
+    System.out.print("reversed number is  $reversedNumber")
 }

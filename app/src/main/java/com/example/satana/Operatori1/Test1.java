@@ -1,24 +1,23 @@
 package com.example.satana.Operatori1;
 
+import com.example.satana.MethodBus.Bus;
+
 public class Test1 {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 5;
-        boolean s = a > b;
-        s = true;
-        System.out.print("It s true ");//Квадрат показывает сколько ошибок
-        //серые это незадействованных переменных
-        if (a < b) {
-            System.out.println("A<B");
+        Bus ourBus;//=new Bus();
+        Bus firstBus;//=new Bus();
+        Bus secondBus;//=new Bus();
+        ourBus = new Bus();
+        firstBus = new Bus();
+        secondBus = new Bus();
 
-        } else if (a > b) {
-            System.out.println("A>B");
-        } else {
-            System.out.println("Ravno");
-        }
-    }
-    class MyString {
-        public MyString() {
-        }
+        ourBus.collor = "Pink";
+        firstBus.collor = "Red";
+        secondBus.collor = "Grey";
+
+        ourBus.showCollor();
+        firstBus.showCollor();
+        secondBus.showCollor();
+
     }
 }

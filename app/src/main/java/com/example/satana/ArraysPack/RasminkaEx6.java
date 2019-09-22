@@ -14,11 +14,10 @@ public class RasminkaEx6 {
             u = u1 + u2;
             u1 = u2;
             u2 = u;
-            if (u >= 100)
-                break;
             massiv.add(u);
         }
         System.out.println(massiv);
     }
 }
+//Сделать с индексами вместо переменных
 

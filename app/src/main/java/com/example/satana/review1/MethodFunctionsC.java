@@ -5,32 +5,18 @@ import java.util.Scanner;
 
 public class MethodFunctionsC {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        ArrayList<Integer> finalmassiv = new ArrayList<>();
-        finalmassiv = createmass(finalmassiv, scan);
+        int [] finalmassiv = {1,2,3,3,4,5,6,7,8,9,10,11,12,13,14,15};
         ArrayList<Integer>finalmassivTwo=method(finalmassiv);
         System.out.println("Чётные числа массива"+finalmassivTwo);
-        scan.close();
     }
 
-    private static ArrayList<Integer> createmass(ArrayList<Integer> massiv, Scanner scan) {
-        int p=0;
-        int n;
-        while (p<10) {
-            p++;
-            System.out.println("Введите число:");
-            n = scan.nextInt();
-            massiv.add(n);
-        }
-        return massiv;
-    }
 
-    private static ArrayList<Integer> method(ArrayList<Integer>massiv){
+
+    private static ArrayList method(int[]finalmassiv){
         ArrayList<Integer>massivTwo=new ArrayList<>();
-        for(int i=0;i<massiv.size();i++){
-            System.out.println(i);
-            if(massiv.get(i)%2==0){
-                massivTwo.add(massiv.get(i));
+        for(int i=0;i<finalmassiv.length;i++){
+            if(finalmassiv[i]%2==0){
+                massivTwo.add(finalmassiv[i]);
             }
         }
         return massivTwo;

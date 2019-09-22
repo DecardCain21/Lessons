@@ -8,15 +8,15 @@ fun main() {
     val scanner = Scanner(System.`in`)
     try {
         while (true) {
-            print("EnterNum: 1")
+            System.out.print("EnterNum: ")
             val num = scanner.nextInt()
             sumNumbers += num
             countNumbers++
         }
     } catch (e: Exception) {
-        println("finish")
+        System.out.println("finish")
     } finally {
-        println("avg: $sumNumbers/$countNumbers = ${sumNumbers / countNumbers}")
+        System.out.println("avg: $sumNumbers/$countNumbers = ${sumNumbers / countNumbers}")
         scanner.close()
     }
 

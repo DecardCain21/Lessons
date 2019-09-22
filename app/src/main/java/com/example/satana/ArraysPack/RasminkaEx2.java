@@ -11,3 +11,4 @@ public class RasminkaEx2 {
         }
     }
 }
+//Тоже самое с ArrayList

@@ -5,26 +5,21 @@ import java.util.ArrayList;
 public class SummOfElements {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
-        int[] array = {1, 2, 3, 4, 5, 1, 7, 8, 2, 6, 3, 8, 10, 0};
-        for (int i = 0; i < array.length; i++) {
-            if (i >= array.length - 1) {
-                break;
+        int summ = Integer.MIN_VALUE;
+        int[] array = {1,2,3,5,6,5,7,8,7};
+        for (int i = 0; i < array.length-2; i++) {
+            if(array[i]==array[i+1]-Math.abs(1)&&array[i]==array[i+2]-Math.abs(2)){
+                int i1=array[i]+array[i+1]+array[i+2];
+                System.out.println(i1=array[i]+array[i+1]+array[i+2]);
+                if(i1>summ)
+                summ=i1;
+
             }
-            if (array[i] == array[i + 1] - 1 || array[i] == array[i - 1] + 1) {
-                list.add(array[i]);
-                System.out.println("Последовательное число:" + array[i]);
-            }
-        }
-        int max = Integer.MIN_VALUE;
-        for (int z=0;z<list.size();z++) {
-            if (z > list.size()+2) {
-                break;
-            }
-            if (max>list.get(z) + list.get(z + 1) + list.get(z+2)) {
-                max = list.get(z) + list.get(z + 1) + list.get(z + 2);
+            else {
+                System.out.println("Массив не удовлетворяет параметрам");
             }
         }
-        System.out.println("Максимальная последовательность" + max);
+        System.out.println("Максимальная последовательность"+summ);
     }
 }
 //три последовательных элемнта в смысле 1,2,3...9,10,11...сделать без сортировки

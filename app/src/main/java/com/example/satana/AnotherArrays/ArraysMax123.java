@@ -8,7 +8,7 @@ public class ArraysMax123 {
         int max2 = Integer.MIN_VALUE;
         int max3 = Integer.MIN_VALUE;
         int[] array = {78, 75, 76, 47, 5, 63, 102, 104,107};
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {//лучше фор ич(удобнее)
             if (max < array[i]) {
                 max3 = max2;
                 max2 = max;

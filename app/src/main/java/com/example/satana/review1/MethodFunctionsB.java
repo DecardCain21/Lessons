@@ -6,33 +6,29 @@ import java.util.Scanner;
 public class MethodFunctionsB {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        ArrayList<Integer> finalmassiv = new ArrayList<>();
-        finalmassiv = createmass(finalmassiv, scan);
+        int []finalmassiv = {20,22,23,1,5};
         int z = method2(finalmassiv);
         System.out.println("Сумма элементов:"+z);
         scan.close();
     }
 
-    private static ArrayList<Integer> createmass(ArrayList<Integer> massiv, Scanner scan) {
-        int n = 1;
-        while (n != 0) {
-            System.out.println("Введите число:");
-            n = scan.nextInt();
-            massiv.add(n);
-        }
-        return massiv;
-    }
+//    private static ArrayList<Integer> createmass(ArrayList<Integer> massiv, Scanner scan) {
+//        int n = 1;
+//        while (n != 0) {
+//            System.out.println("Введите число:");
+//            n = scan.nextInt();
+//            massiv.add(n);
+//        }
+//        return massiv;
+//    }
 
-    private static int method2(ArrayList<Integer> massiv) {
+    private static int method2(int[] finalmassiv) {
         int summ =0;
         int i;
-        for (i = 0; i < massiv.size(); i++) {
+        for (i = 0; i < finalmassiv.length; i++) {
             System.out.println("Проверяка1:"+i);
-            for (int j = massiv.get(i); j < massiv.size(); j++) {
-                summ=summ+j;
-                System.out.println("Проверяка2:"+summ);
-            }
-            break;
+            summ=summ+finalmassiv[i];
+
         }
         return summ;
     }
