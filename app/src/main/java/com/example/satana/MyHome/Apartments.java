@@ -7,6 +7,15 @@ public class Apartments {
 
     public int people=random.nextInt(4);
     public boolean heating;
+
+    public boolean isHeating() {
+        return heating;
+    }
+
+    public void setHeating(boolean heating) {
+        this.heating = heating;
+    }
+
     public boolean gas;
 
     public int getPeople() {
@@ -17,13 +26,7 @@ public class Apartments {
         this.people = people;
     }
 
-    public boolean isAnimals() {
-        return heating;
-    }
 
-    public void setAnimals(boolean animals) {
-        this.heating = animals;
-    }
 
     public boolean getGas() {
         return gas;
