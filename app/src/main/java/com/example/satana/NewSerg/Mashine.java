@@ -6,15 +6,16 @@ public class Mashine {
 
     private String Model;
     private String Bodymashine;
-    private List<Transmissionitems> Transmission;
+    private TransmissionMashine transmissionmyCar=new TransmissionMashine();
     private String EngineMashine;
 
-    public List<Transmissionitems> getTransmission() {
-        return Transmission;
+
+    public TransmissionMashine getTransmissionCar() {
+        return this.transmissionmyCar;
     }
 
-    public void setTransmission(List<Transmissionitems> transmission) {
-        Transmission = transmission;
+    public void setTransmissionCar(TransmissionMashine transmissionCar) {
+        this.transmissionmyCar = transmissionCar;
     }
 
     public String getModel() {
@@ -40,6 +41,10 @@ public class Mashine {
 
     public void setEngineMashine(String engineMashine) {
         EngineMashine = engineMashine;
+    }
+
+    public static void main(String[] args) {
+        System.out.println();
     }
 
 }
