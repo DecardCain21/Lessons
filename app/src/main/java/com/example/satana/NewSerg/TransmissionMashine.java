@@ -1,19 +1,31 @@
 package com.example.satana.NewSerg;
 
 public class TransmissionMashine {
-    String privod="Задний";
-    int numwheel=4;
-    boolean airsuspension=true;
+    String privod;
+    int numwheel;
+    boolean airsuspension;
 
     public String getPrivod() {
-        return this.privod;
+        return privod;
+    }
+
+    public void setPrivod(String privod) {
+        this.privod = privod;
     }
 
     public int getNumwheel() {
-        return this.numwheel;
+        return numwheel;
+    }
+
+    public void setNumwheel(int numwheel) {
+        this.numwheel = numwheel;
     }
 
     public boolean isAirsuspension() {
-        return this.airsuspension;
+        return airsuspension;
+    }
+
+    public void setAirsuspension(boolean airsuspension) {
+        this.airsuspension = airsuspension;
     }
 }

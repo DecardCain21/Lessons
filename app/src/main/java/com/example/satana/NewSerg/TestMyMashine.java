@@ -10,6 +10,14 @@ public class TestMyMashine {
         myCar.setBodymashine("Кузов 1");
         myCar.setEngineMashine("5.0 MT");
 
-        System.out.println("Модель авто:"+myCar.getModel()+"\nКузов: "+myCar.getBodymashine()+"\nТрансмиссия:"+myCar.getTransmissionCar()+"\nДвигатель:"+myCar.getEngineMashine());
+
+        TransmissionMashine transmissionMyCar=new TransmissionMashine();
+
+        transmissionMyCar.setAirsuspension(true);
+        transmissionMyCar.setNumwheel(4);
+        transmissionMyCar.setPrivod("Задний");
+
+
+        System.out.println("Модель авто:"+myCar.getModel()+"\nКузов: "+myCar.getBodymashine()+"\nДвигатель:"+myCar.getEngineMashine());
     }
 }

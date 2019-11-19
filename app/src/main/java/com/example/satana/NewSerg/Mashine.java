@@ -6,17 +6,9 @@ public class Mashine {
 
     private String Model;
     private String Bodymashine;
-    private TransmissionMashine transmissionmyCar=new TransmissionMashine();
     private String EngineMashine;
 
 
-    public TransmissionMashine getTransmissionCar() {
-        return this.transmissionmyCar;
-    }
-
-    public void setTransmissionCar(TransmissionMashine transmissionCar) {
-        this.transmissionmyCar = transmissionCar;
-    }
 
     public String getModel() {
         return Model;
