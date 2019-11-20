@@ -17,6 +17,6 @@ public class TestMyMashine {
 
 
 
-        System.out.println("Модель авто:"+myCar.getModel()+"\nКузов: "+myCar.getBodymashine()+"\nДвигатель:"+myCar.getEngineMashine()+"\nТрансмиссия:"+myCar.getTransmissionCar());
+        System.out.println("Модель авто:"+myCar.getModel()+"\nКузов: "+myCar.getBodymashine()+"\nДвигатель:"+myCar.getEngineMashine()+"\nТрансмиссия:"+myCar.getTransmissionCar().getPrivod());
     }
 }
