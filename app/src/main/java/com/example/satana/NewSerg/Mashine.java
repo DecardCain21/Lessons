@@ -2,8 +2,9 @@ package com.example.satana.NewSerg;
 
 import java.util.List;
 
-public class Mashine {
 
+public class Mashine {
+    private TransmissionMashine transmissionCar;
     private String Model;
     private String Bodymashine;
     private String EngineMashine;
