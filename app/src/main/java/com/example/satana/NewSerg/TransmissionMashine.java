@@ -5,6 +5,12 @@ public class TransmissionMashine {
     int numwheel;
     boolean airsuspension;
 
+    public TransmissionMashine(String privod,int numwheel,boolean airsuspension){
+        this.privod=privod;
+        this.numwheel=numwheel;
+        this.airsuspension=airsuspension;
+    }
+
     public String getPrivod() {
         return privod;
     }

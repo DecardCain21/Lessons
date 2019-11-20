@@ -11,6 +11,14 @@ public class Mashine {
 
 
 
+    public TransmissionMashine getTransmissionCar() {
+        return transmissionCar;
+    }
+
+    public void setTransmissionCar(TransmissionMashine transmissionCar) {
+        this.transmissionCar = transmissionCar;
+    }
+
     public String getModel() {
         return Model;
     }
