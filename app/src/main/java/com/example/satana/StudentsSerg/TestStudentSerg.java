@@ -11,11 +11,19 @@ public class TestStudentSerg {
         listone.add(2);
         listone.add(5);
         listone.add(4);
+        Student one=new Student("Ivan",24,listone);
+
+        List<Integer> listtwo = new ArrayList<Integer>();
+        listone.add(2);
+        listone.add(5);
+        listone.add(4);
+        Student two=new Student("Alexander",24,listtwo);
+
+        StudentsGroup group1616=new StudentsGroup("NNGY");
+        group1616.setStudentgroupnum(1616);
+
+        System.out.println("Студент:"+one.getName()+"\nГруппа:"+group1616.getStudentgroupnum()+"\nУниверситет:"+group1616.getUniversity());
 
 
-        Student one = new Student("Ivan", 24, listone);
-
-
-        System.out.println("Имя студента:" + one.getName() + "\nВозраст:" + one.getAge() + "\nУспеваемость:" + one.getAssessments());
     }
 }

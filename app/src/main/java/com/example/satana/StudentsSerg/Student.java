@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
+    private StudentsGroup studentsGroup;
     String name;
     int age;
     List<Integer> assessments;
