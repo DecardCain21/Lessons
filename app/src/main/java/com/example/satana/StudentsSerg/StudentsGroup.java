@@ -7,6 +7,14 @@ public class StudentsGroup {
     private String university;
     private int studentgroupnum;
 
+    List<Integer> listtwo = new ArrayList<Integer>();
+
+    Student one=new Student("Nikita",22,listtwo);
+    private ArrayList<Student> groupofstudent;
+
+    public ArrayList<Student> getGroupofstudent() {
+        return groupofstudent;
+    }
 
     public String getUniversity() {
         return university;
