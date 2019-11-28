@@ -1,23 +1,29 @@
 package com.example.satana.StudentsSerg;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class StudentsGroup {
-    private String university;
+    private String groupname;
     private int studentgroupnum;
-
-    List<Integer> listtwo = new ArrayList<Integer>();
-
-    Student one=new Student("Nikita",22,listtwo);
     private ArrayList<Student> groupofstudent;
+
+
+        StudentsGroup (String name,int id){
+        groupname=name;
+        studentgroupnum=id;
+        groupofstudent = new ArrayList<>();
+    }
+
+    public void setStudentgroup(Student student){
+            groupofstudent.add(student);
+    }
 
     public ArrayList<Student> getGroupofstudent() {
         return groupofstudent;
     }
 
-    public String getUniversity() {
-        return university;
+    public String getGroupname() {
+        return groupname;
     }
 
 
@@ -28,10 +34,6 @@ public class StudentsGroup {
 
     public void setStudentgroupnum(int studentgroupnum) {
         this.studentgroupnum = studentgroupnum;
-    }
-
-    public StudentsGroup(String university){
-        this.university=university;
     }
 
 }

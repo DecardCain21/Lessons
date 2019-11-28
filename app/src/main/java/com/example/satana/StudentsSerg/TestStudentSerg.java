@@ -19,8 +19,11 @@ public class TestStudentSerg {
         listtwo.add(4);
         Student two=new Student("Alexander",24,listtwo);
 
-        StudentsGroup group1616=new StudentsGroup("NNGY");
-        group1616.setStudentgroupnum(1616);
+        StudentsGroup studentsGroup=new StudentsGroup("risovanieGroup",1234123);
+        studentsGroup.setStudentgroup(one);
+
+//        StudentsGroup group1616=new StudentsGroup("NNGY");
+//        group1616.setStudentgroupnum(1616);
 
 //        ArrayList<Student> groupOne=new ArrayList<>();
 //        groupOne.add(one);
@@ -28,7 +31,7 @@ public class TestStudentSerg {
 
 
 
-        System.out.println("Студент:"+one.getName()+"\nГруппа:"+group1616.getStudentgroupnum()+"\nУниверситет:"+group1616.getUniversity());
+    //    System.out.println("Студент:"+one.getName()+"\nГруппа:"+group1616.getStudentgroupnum()+"\nУниверситет:"+group1616.getGroupname());
 
 
     }
