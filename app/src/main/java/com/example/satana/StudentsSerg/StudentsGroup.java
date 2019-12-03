@@ -14,6 +14,8 @@ public class StudentsGroup {
         groupofstudent = new ArrayList<>();
     }
 
+
+
     public void setStudentgroup(Student student){
             groupofstudent.add(student);
     }

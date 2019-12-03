@@ -14,6 +14,16 @@ public class Student {
         this.age=age;
         this.assessments=assessments;
     }
+//добавить переменную в конструктор,и возвращать значение хорошист/говношист
+    public void goodassessments(List<Integer>assessments){
+        this.assessments=assessments;
+        for(int i=0;i<assessments.size();i++){
+            if(assessments.get(i)<4){
+
+            }
+        }
+
+    }
 
     public String getName() {
         return name;
