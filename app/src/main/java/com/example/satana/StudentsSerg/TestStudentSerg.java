@@ -42,19 +42,15 @@ public class TestStudentSerg {
 
         ArrayList<Student> listofBest = new ArrayList<>();
         int z = 0;
-        int f=0;
-        for (int i = 0; i < groupone.size(); i++) {
+        for (int i=0;i<groupone.get(z).assessments.get(i);i++) {
             System.out.println("Оценки:"+groupone.get(z).assessments.size()+" Имя:"+groupone.get(z).getName());
-            if (groupone.get(z).assessments.get(f) >=4) {
-                f++;
+            if (groupone.get(z).assessments.get(i) >=4) {
                 if(groupone.get(z).assessments.size()>=groupone.get(z).assessments.size()-1) {
                     listofBest.add(groupone.get(z));
+                    z++;
                     System.out.println(groupone.get(z).assessments.size());
                     System.out.println(listofBest.get(z));
-                    f = 0;
-                    z++;
                 }
-
             } else {
                 System.out.println("На парушу этого  " + groupone.get(i).getName());
                 z++;
