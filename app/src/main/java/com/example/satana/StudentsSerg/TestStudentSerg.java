@@ -41,23 +41,27 @@ public class TestStudentSerg {
         studentsGroup.setStudentgroup(one);
 
         ArrayList<Student> listofBest = new ArrayList<>();
-        int z = 0;
-        for (int i=0;i<groupone.get(z).assessments.get(i);i++) {
-            System.out.println("Оценки:"+groupone.get(z).assessments.size()+" Имя:"+groupone.get(z).getName());
-            if (groupone.get(z).assessments.get(i) >=4) {
-                if(groupone.get(z).assessments.size()>=groupone.get(z).assessments.size()-1) {
-                    listofBest.add(groupone.get(z));
-                    z++;
-                    System.out.println(groupone.get(z).assessments.size());
-                    System.out.println(listofBest.get(z));
+        ArrayList<Student> listofBad = new ArrayList<>();
+        int i;
+        for (int j = 0; j < groupone.size(); j++) {
+             i=0;
+            for (; i < groupone.get(j).assessments.size(); i++) {
+                if (groupone.get(j).assessments.get(i) >= 4) {
+                    System.out.println("next "+i);
+                    if(i>=groupone.get(j).assessments.size()-1) {
+                        System.out.println("Оценки:" + groupone.get(j).assessments.size() + " Имя:" + groupone.get(j).getName());
+                        listofBest.add(groupone.get(j));
+                        System.out.println(listofBest.size());
+                    }
                 }
-            } else {
-                System.out.println("На парушу этого  " + groupone.get(i).getName());
-                z++;
+                else {
+                    System.out.println("На парушу этого  " + groupone.get(j).getName());
+                    listofBad.add(groupone.get(j));
+                    break;
+                }
             }
+            System.out.println("Отличники:"+listofBest.size()+"\nВ жертву:"+listofBad.size());
         }
-
-        //System.out.println(analysisStudent(one, listone));
     }
 }
 
