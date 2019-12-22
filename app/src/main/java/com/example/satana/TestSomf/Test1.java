@@ -7,9 +7,9 @@ public class Test1 {
     public static void main(String[] args) {
 
         int [] array =  {64, 42, 73, 41, 32, 53, 16, 24, 57, 42, 74, 55, 36};
-        System.out.println(Arrays.toString(array));
+        System.out.println("Массив:"+Arrays.toString(array));
         quickSort(array, 0, array.length - 1);
-        System.out.println(Arrays.toString(array));
+        System.out.println("После сортировки:"+Arrays.toString(array));
 
 
     }
@@ -31,7 +31,7 @@ public class Test1 {
         int rightIndex = to;
         int leftIndex = from;
 
-        int pivot = arr[from + (to - from) / 2];
+        int pivot = arr[from + (to - from) / 2];//arr[from]
         while (leftIndex <= rightIndex) {
 
             while (arr[leftIndex] < pivot) {
